@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="TiTiGo广告系统配置"
+        android:textColor="@color/white"
+        android:textSize="22dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="25dp"
+        android:paddingTop="50dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="50dp">
+
+        <RelativeLayout
+            android:id="@+id/import_data"
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:layout_weight="5"
+            android:background="@drawable/radius_tx_blue">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/ic_baseline_system_update_alt_24"
+                android:drawablePadding="5dp"
+                android:text="导入USB数据"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/start_play"
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="5"
+            android:background="@drawable/radius_tx_orange">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/ic_baseline_play_circle_filled_24"
+                android:drawablePadding="5dp"
+                android:text="播放"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="媒体资源"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btn_top_banner"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@android:color/white"
+        android:drawablePadding="18dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:text="顶部海报图"
+        android:textColor="#333333"
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="#cccccc" />
+
+    <TextView
+        android:id="@+id/btn_left_banner"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@android:color/white"
+        android:drawablePadding="18dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:text="左侧广告图"
+        android:textColor="#333333"
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="#cccccc" />
+
+    <TextView
+        android:id="@+id/btn_right_banner"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@android:color/white"
+        android:drawablePadding="18dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:text="右侧广告图"
+        android:textColor="#333333"
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="#cccccc" />
+
+    <TextView
+        android:id="@+id/btn_video_banner"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@android:color/white"
+        android:drawablePadding="18dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:text="视频"
+        android:textColor="#333333"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="模式"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <RadioButton
+            android:id="@+id/rb_oneline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="在线"
+            android:textColor="#333333"
+            android:textSize="22dp" />
+
+        <RadioButton
+            android:id="@+id/rb_offline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:checked="true"
+            android:padding="5dp"
+            android:text="离线"
+            android:textColor="#333333"
+            android:textSize="22dp" />
+    </RadioGroup>
+
+
+</LinearLayout>

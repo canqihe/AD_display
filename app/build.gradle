@@ -1,0 +1,65 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.colin.ad_display"
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.youth.banner:banner:2.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    //视频播放器
+    implementation 'com.linsea:universalvideoview:1.0.0@aar'
+    //黄油刀
+    implementation 'com.jakewharton:butterknife:10.2.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
+    //Room数据库
+    implementation "androidx.room:room-runtime:2.0.0-alpha1"
+    annotationProcessor "androidx.room:room-compiler:2.0.0-alpha1"
+//    //Zoom数据库拓展库
+    api 'com.cicinnus.zoom:extend:1.0.7'
+    annotationProcessor 'com.cicinnus.zoom:compiler:1.0.7'
+    //数据库调试
+//    implementation 'com.amitshekhar.android:debug-db:1.0.6'
+//    //BaseAdapter
+    implementation 'com.zhy:base-rvadapter:3.0.3'
+    //网络库 封装RXjava2+Retrofit+okhttp
+    implementation 'com.zhouyou:rxeasyhttp:2.1.5'
+
+    implementation 'com.github.mjdev:libaums:0.5.5'
+
+
+}
